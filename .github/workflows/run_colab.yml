@@ -1,0 +1,26 @@
+name: Run Colab Notebook
+
+on:
+  schedule:
+    - cron: '0 9 * * *'  # Chạy mỗi ngày lúc 9h sáng
+
+jobs:
+  execute_notebook:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Install Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        pip install nbformat requests
+
+    - name: Run Colab Notebook
+      run: |
+        python run_notebook.py
