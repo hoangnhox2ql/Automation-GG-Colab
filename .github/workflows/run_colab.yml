@@ -1,26 +1,17 @@
-name: Run Colab Notebook
+name: Run Google Colab Notebook
 
 on:
   schedule:
-    - cron: '0 3 * * *'  # Chạy mỗi ngày lúc 9h sáng
+    - cron: '0 3 * * *'  # Lịch trình chạy mỗi ngày vào 9h sáng UTC
 
 jobs:
-  execute_notebook:
+  run_colab:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out repository
+    - name: Checkout repository
       uses: actions/checkout@v2
-
-    - name: Install Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-
-    - name: Install dependencies
-      run: |
-        pip install nbformat requests
 
     - name: Run Colab Notebook
       run: |
-        python run_notebook.py
+        curl -X POST https://colab.research.google.com/drive/1kkw4HgAP_BLAfOpxNoZj-RCaYt53jVpR/execute
