@@ -14,4 +14,4 @@ jobs:
 
     - name: Run Colab Notebook
       run: |
-        curl -X POST https://colab.research.google.com/drive/1kkw4HgAP_BLAfOpxNoZj-RCaYt53jVpR/execute
+        curl -X POST https://colab.research.google.com/drive/1U3Vx_ZF9KQP4p737yFiDF4_QTfwJUu2-#scrollTo=ap9KLQ-sX7WF/execute
