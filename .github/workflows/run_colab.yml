@@ -2,7 +2,7 @@ name: Run Colab Notebook
 
 on:
   schedule:
-    - cron: '0 9 * * *'  # Chạy mỗi ngày lúc 9h sáng
+    - cron: '0 3 * * *'  # Chạy mỗi ngày lúc 9h sáng
 
 jobs:
   execute_notebook:
