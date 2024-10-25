@@ -2,7 +2,7 @@ name: Run Google Colab Notebook
 
 on:
   schedule:
-    - cron: '0 3 * * *'  # Lịch trình chạy mỗi ngày vào 9h sáng UTC
+    - cron: '0 4 * * *'  # Lịch trình chạy mỗi ngày vào 9h sáng UTC
 
 jobs:
   run_colab:
