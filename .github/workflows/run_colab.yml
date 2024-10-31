@@ -14,4 +14,4 @@ jobs:
 
     - name: Run Colab Notebook
       run: |
-        curl -X POST https://colab.research.google.com/drive/1iQ4deYGPUZA4_5U5bx3zIP3_JpD4ynGf?usp=sharing#scrollTo=o6w8BmInX4qo/execute
+        python connect_linkedin_with_cookie.py
