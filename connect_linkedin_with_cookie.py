@@ -9,12 +9,12 @@ Original file is located at
 # **CÀI ĐẶT THƯ VIỆN CẦN THIẾT**
 """
 
-!pip install selenium
-!apt-get update
-!apt install chromium-chromedriver
-!pip install --upgrade selenium
-!pip install pandas
-!pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+pip install selenium
+apt-get update
+apt install chromium-chromedriver
+pip install --upgrade selenium
+pip install pandas
+pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
 
 
 
